@@ -1,7 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.roboto-regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+}
+
+.roboto-bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.eMailA {
+	font-weight: 600;
+}
+
+.textBox {
+	height: 2em;
+	font-size: 1em;
+	border-radius: 0.5em;
+}
+
+.update {
+	font-size: 2em;
+	font-weight: 700;
+}
+
 .attribution {
-	font-size: 11px;
+	font-size: 0.7em;
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.subBtn {
+	background-color: hsl(235, 18%, 26%);
+	color: hsl(0, 0%, 100%);
+	/* top | right | bottom | left */
+	padding: 0.75em 2em 0.75em 2em;
+	margin-top: 2em;
+	border-radius: 0.5em;
 }
