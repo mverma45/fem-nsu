@@ -28,6 +28,12 @@
 	font-weight: 700;
 }
 
+.imgSide {
+	position: relative;
+	left: 26em;
+	bottom: 18.25em;
+}
+
 .attribution {
 	font-size: 0.7em;
 	text-align: center;
