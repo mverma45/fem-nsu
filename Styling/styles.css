@@ -1,20 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.roboto-regular {
-	font-family: 'Roboto', sans-serif;
+@font-face {
+	font-family: Roboto;
+	src: local('Roboto Regular'), url('/assets/fonts/Roboto-Regular.ttf');
 	font-weight: 400;
-	font-style: normal;
-	font-size: 1em;
 }
 
-.roboto-bold {
-	font-family: 'Roboto', sans-serif;
+@font-face {
+	font-family: Roboto;
+	src: local('Roboto Bold') url('/assets/fonts/Roboto-Bold.ttf');
 	font-weight: 700;
-	font-style: normal;
+}
+
+:root {
+	--clr-neutral-800: hsl(234, 29%, 20%);
+	--clr-neutral-700: hsl(235, 18%, 26%);
+	--clr-neutral-200: hsl(231, 7%, 60%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-blue: hsl(228, 45%, 44%);
+
+	--clr-accent-400: hsl(4, 100%, 67%);
+	--clr-accent-500: hsl(347, 100%, 66%);
+
+	--ff-base: Roboto, sans-serif;
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	--fs-300: 0.825rem;
+	--fs-400: 1rem;
+	--fs-900: 2.5rem;
+}
+
+/*
+Box Sizing
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	display: block;
 }
 
 .mainContainer {
-	background-color: hsl(234, 29%, 20%);
+	background-color: var(--clr-neutral-800);
 	max-width: 75em;
 	max-height: 55em;
 	/* top | right | bottom | left */
@@ -26,20 +57,20 @@
 	width: 77%;
 	max-width: 70em;
 	height: 38em;
-	padding-top: 1em;
+	padding-top: var(--fs-400);
 	margin: 15em;
-	border-radius: 2.5em;
-	background-color: hsl(0, 0%, 100%);
+	border-radius: var(--fs-900);
+	background-color: var(--clr-neutral-100);
 }
 
 .eMailA {
 	font-weight: 600;
-	padding-left: 2.5em;
+	padding-left: var(--fs-900);
 }
 
-.textBox {
-	height: 2em;
-	font-size: 1em;
+.eMail {
+	height: var(--fs-900);
+	font-size: var(--fs-400);
 	border-radius: 0.5em;
 }
 
@@ -51,7 +82,7 @@
 }
 
 .monthlyUpdates {
-	padding-top: 2em;
+	padding-top: var(--fs-900);
 	padding-left: 2.6em;
 }
 
@@ -69,7 +100,7 @@
 	text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--clr-neutral-blue);
 }
 
 .subBtn {
@@ -77,6 +108,6 @@
 	color: hsl(0, 0%, 100%);
 	/* top | right | bottom | left */
 	padding: 0.75em 2em 0.75em 2em;
-	margin-top: 2em;
+	margin-top: var(--fs-900);
 	border-radius: 0.5em;
 }

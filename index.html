@@ -23,9 +23,15 @@
 			<div class="container">
 				<!-- Sign-up form start -->
 				<div class="imgSide">
-					<img
-						src="./assets/images/illustration-sign-up-desktop.svg"
-						alt="" />
+					<picture>
+						<source
+							media="(min-width: 650px)"
+							srcset="./assets/images/illustration-sign-up-desktop.svg" />
+
+						<img
+							src="./assets/images/illustration-sign-up-desktop.svg"
+							alt="" />
+					</picture>
 				</div>
 				<div class="update">Stay updated!</div>
 
@@ -61,10 +67,12 @@
 					<label for="eMail">Email address</label><br />
 
 					<input
-						class="textBox"
-						type="text"
+						class="eMail"
+						type="eMail"
 						name="eMail"
-						placeholder="email@company.com" /><br />
+						placeholder="email@company.com" />
+					<span class="error">Email address required</span>
+					<br />
 					<button class="subBtn">Subscribe to monthly newsletter</button>
 				</form>
 			</div>
