@@ -1,3 +1,7 @@
-function subBtn() {
-	alert('Thanks for subscribing! A confirmation email has been sent');
+function changeStyling() {
+	let btn = document.getElementsByClassName('subBtn');
+
+	for (let i = 0; i < btn.length; i++) {
+		btn[i].style.color = 'red';
+	}
 }

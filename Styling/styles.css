@@ -40,23 +40,23 @@ Box Sizing
 }
 
 img {
-	max-width: 100%;
-	display: block;
+	max-width: 95%;
+	padding-top: 0.03rem;
+	/* padding-bottom: 0.5em; */
 }
 
 .mainContainer {
 	background-color: var(--clr-neutral-800);
-	max-width: 75em;
-	max-height: 55em;
+	max-width: 89em;
 	/* top | right | bottom | left */
 	padding: 1em;
+	border-radius: var(--fs-900);
 }
 
 .container {
 	position: relative;
-	width: 77%;
-	max-width: 70em;
-	height: 38em;
+	width: 58em auto;
+	height: 33em;
 	padding-top: var(--fs-400);
 	margin: 15em;
 	border-radius: var(--fs-900);
@@ -77,17 +77,13 @@ img {
 .update {
 	font-size: 3em;
 	font-weight: 700;
-	padding-left: 1.9em;
-	margin-top: 1.2em;
+	padding-left: 1em;
+	margin-top: 1em;
 }
 
 .monthlyUpdates {
 	padding-top: var(--fs-900);
 	padding-left: 2.6em;
-}
-
-.productList {
-	padding: 0;
 }
 
 .imgSide {
