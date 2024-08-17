@@ -117,6 +117,35 @@ h1 {
 	font-size: var(--fs-font);
 }
 
-.attribution {
-	color: wheat;
+.hide {
+	display: none;
+}
+
+.card-2 {
+	background-color: hsl(0, 0%, 100%);
+	width: 400px;
+	padding: 40px;
+	border-radius: 5px;
+}
+
+.card-2 h1 {
+	font-size: 40px;
+}
+
+.icon-card-2 {
+	width: 50px;
+}
+
+.card-2 button {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column-reverse;
+		width: 90%;
+	}
+	.card h1 {
+		font-size: 30px;
+	}
 }
