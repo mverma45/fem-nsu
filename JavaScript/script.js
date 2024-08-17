@@ -1,7 +1,4 @@
-function changeStyling() {
-	let btn = document.getElementsByClassName('subBtn');
-
-	for (let i = 0; i < btn.length; i++) {
-		btn[i].style.color = 'red';
-	}
-}
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+});
