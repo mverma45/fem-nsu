@@ -113,6 +113,11 @@ button {
 	background: hsl(235, 18%, 26%);
 }
 
+button:hover {
+	background-color: hsl(4, 100%, 67%);
+	transition: all 1s;
+}
+
 h1 {
 	font-size: var(--fs-font);
 }
@@ -143,9 +148,32 @@ h1 {
 @media (max-width: 768px) {
 	.card {
 		flex-direction: column-reverse;
-		width: 90%;
+		width: 95%;
+	}
+	body {
+		padding: 0;
+		margin: 0;
 	}
 	.card h1 {
 		font-size: 30px;
+	}
+	.left {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.right {
+		width: 100%;
+	}
+
+	.left img {
+		content: url('../assets/images/illustration-sign-up-mobile.svg');
+	}
+	form {
+		width: 90%;
+	}
+
+	.card-2 {
+		min-height: 100vh;
 	}
 }
